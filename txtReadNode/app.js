@@ -40,12 +40,14 @@ fs.readFile("p022_names.txt", "utf-8", (err, data) => {
   let maiorScore = 0;
   let nomeMaiorScore = '';
   for (let i = 0; i < nomes.length; i++) {
+    //Pra cada nome soma é iniciada como 0;
     let soma = 0;
 
     for (let j = 0; j < nomes[i].length; j++) {
       //console.log(nomes[i][j]);
       let value = alphabet.indexOf(nomes[i][j]);
       if (value !== -1) {
+        //Soma mais um pois o valor começa com 1, e no array começa com 0 obviamente
         soma += value + 1;
       }
     }
