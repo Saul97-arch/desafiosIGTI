@@ -68,7 +68,7 @@ public class Menu {
                     System.out.println("Informe o indice do vendedor");
                     int vendedorCarro = scanner.nextInt();
                     scanner.nextLine();
-                    if (!vendedores.contains(vendedorCarro)) {
+                    if (!vendedores.contains(vendedores.get(vendedorCarro))) {
                         System.out.println("Vendedor não existe!");
                         opcao = mostrarMenu();
                         break;
@@ -96,7 +96,7 @@ public class Menu {
                     System.out.println("Informe o indice do vendedor");
                     int vendedorMoto = scanner.nextInt();
                     scanner.nextLine();
-                    if (!vendedores.contains(vendedorMoto)) {
+                    if (!vendedores.contains(vendedores.get(vendedorMoto))) {
                         System.out.println("Vendedor não existe!");
                         opcao = mostrarMenu();
                         break;
